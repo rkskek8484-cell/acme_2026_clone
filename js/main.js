@@ -19,6 +19,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+/*
 const slideWrapper = document.querySelector(".slidewrapper"),
   slideContainer = slideWrapper.querySelector(".slidecontainer"),
   slides = slideContainer.querySelectorAll("li"),
@@ -26,9 +27,11 @@ const slideWrapper = document.querySelector(".slidewrapper"),
   prevBtn = slideWrapper.querySelector(".prev"),
   nextBtn = slideWrapper.querySelector(".next");
 let currentIdx = 0;
+*/
 
-/* slideContainer 너비 지정 */
+/* slideContainer 너비 지정 
 slideContainer.style.width = `${slideCount * 100}%`;
+*/
 
 /* 
 슬라이드 이동 함수 
@@ -37,10 +40,26 @@ moveSlide 함수 생성,
 num 번호에 해당하는 슬라이드 보이도록 이동
 transform:translateX(33.3333%)
 */
+/*
 function moveSlide(num) {
   slideContainer.style.transform = `translateX(${-(num / slideCount) * 100}%)`;
   currentIdx = num;
 }
+*/
+
+const swiper = new Swiper(".testimonial", {
+  direction: "horizontal",
+  loop: true,
+});
+const prevBtn = document.querySelector(".prev");
+const nextBtn = document.querySelector(".next");
+
+prevBtn.addEventListener("click", () => {
+  swiper.slidePrev();
+});
+nextBtn.addEventListener("click", () => {
+  swiper.slideNext();
+});
 
 //버튼으로 이동하기
 /*
@@ -53,7 +72,7 @@ function moveSlide(num) {
   변수명 nextIdx 다음 슬라이드 번호 생성
   (첫번째 슬라이드면 마지막 슬라이드로 이동)
   moveSlide(nextIdx) 실행  
-*/
+
 nextBtn.addEventListener("click", () => {
   let nextIdx = (currentIdx + 1) % slideCount;
   moveSlide(nextIdx);
@@ -62,3 +81,4 @@ prevBtn.addEventListener("click", () => {
   let nextIdx = (currentIdx - 1 + slideCount) % slideCount;
   moveSlide(nextIdx);
 });
+*/

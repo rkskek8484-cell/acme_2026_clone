@@ -13,6 +13,9 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
   </head>
 
   <body>
@@ -62,10 +65,10 @@
         </ul>
       </section>
       <hr class="container" />
-      <section class="testimonial slidewrapper container inner-pd">
+      <section class="testimonial slidewrapper container inner-pd swiper">
         <h2 class="hidden">testimonial</h2>
-        <ul class="slidecontainer">
-          <li>
+        <ul class="slidecontainer swiper-wrapper">
+          <li class="swiper-slide">
             <blockquote>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
@@ -74,7 +77,7 @@
             </blockquote>
             <small>john doe</small>
           </li>
-          <li>
+          <li class="swiper-slide">
             <blockquote>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
@@ -83,7 +86,7 @@
             </blockquote>
             <small>jane</small>
           </li>
-          <li>
+          <li class="swiper-slide">
             <blockquote>
               <p>
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum accusantium nulla
@@ -93,10 +96,10 @@
             <small>tomas</small>
           </li>
         </ul>
-        <button type="button" class="button prev">
+        <button type="button" class="button prev swiper-button-prev">
           <span class="material-icons">chevron_left</span>
         </button>
-        <button type="button" class="button next">
+        <button type="button" class="button next swiper-button-next">
           <span class="material-icons">chevron_right</span>
         </button>
       </section>
