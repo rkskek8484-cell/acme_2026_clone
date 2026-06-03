@@ -47,6 +47,7 @@ function moveSlide(num) {
 }
 */
 
+// index 페이지 Swiper
 const swiper = new Swiper(".testimonial", {
   direction: "horizontal",
   loop: true,
@@ -59,6 +60,25 @@ prevBtn.addEventListener("click", () => {
 });
 nextBtn.addEventListener("click", () => {
   swiper.slideNext();
+});
+
+// about 페이지 Swiper
+const swiper2 = new Swiper(".portfolio", {
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+const prevBtn2 = document.querySelector(".prev");
+const nextBtn2 = document.querySelector(".next");
+
+prevBtn2.addEventListener("click", () => {
+  swiper2.slidePrev();
+});
+nextBtn2.addEventListener("click", () => {
+  swiper2.slideNext();
 });
 
 //버튼으로 이동하기
