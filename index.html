@@ -116,5 +116,21 @@
     <footer id="footer" class="inner-pd d-flex flex-column align-items-center g-1"></footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="js/main.js"></script>
+    <script>
+      const swiper = new Swiper(".testimonial .swiper", {
+        direction: "horizontal",
+        loop: true,
+      });
+      const slideWrapper = document.querySelector(".testimonial"),
+        prevBtn = document.querySelector(".prev"),
+        nextBtn = document.querySelector(".next");
+
+      prevBtn.addEventListener("click", () => {
+        swiper.slidePrev();
+      });
+      nextBtn.addEventListener("click", () => {
+        swiper.slideNext();
+      });
+    </script>
   </body>
 </html>

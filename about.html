@@ -99,47 +99,49 @@
         </ul>
       </section>
       <hr class="container" />
-      <section class="portfolio slidewrapper container inner-pd swiper">
+      <section class="portfolio slidewrapper container inner-pd">
         <div class="header d-flex flex-column g-1">
           <h3 class="text-body-l">Example Portfolios</h3>
           <p class="text-body-m-plus">Here's some examples of what you can create with our app.</p>
         </div>
-        <ul class="slidecontainer swiper-wrapper">
-          <li class="swiper-slide">
-            <img src="images/portfolio_01.jpg" alt="portfolio_01" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
-              facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
-              accusantium quia! Ut, pariatur quia.
-            </p>
-            <a href="" class="text-link">Link to portfolio &rarr;</a>
-          </li>
-          <li class="swiper-slide">
-            <img src="images/portfolio_01.jpg" alt="portfolio_01" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
-              facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
-              accusantium quia! Ut, pariatur quia.
-            </p>
-            <a href="" class="text-link">Link to portfolio &rarr;</a>
-          </li>
-          <li class="swiper-slide">
-            <img src="images/portfolio_01.jpg" alt="portfolio_01" />
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
-              facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
-              accusantium quia! Ut, pariatur quia.
-            </p>
-            <a href="" class="text-link">Link to portfolio &rarr;</a>
-          </li>
-        </ul>
-        <button type="button" class="button prev swiper-button-prev">
+        <div class="swiper">
+          <ul class="slidecontainer swiper-wrapper">
+            <li class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </li>
+            <li class="swiper-slide">
+              <img src="images/portfolio_01.jpg" alt="portfolio_01" />
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore autem consequatur
+                facere, dolores fugiat magnam neque doloribus sint, ea odio sed dicta eos iste quos
+                accusantium quia! Ut, pariatur quia.
+              </p>
+              <a href="" class="text-link">Link to portfolio &rarr;</a>
+            </li>
+          </ul>
+        </div>
+        <div class="swiper-pagination"></div>
+        <button type="button" class="button prev">
           <span class="material-icons">chevron_left</span>
         </button>
-        <button type="button" class="button next swiper-button-next">
+        <button type="button" class="button next">
           <span class="material-icons">chevron_right</span>
         </button>
-        <div class="swiper-pagination"></div>
       </section>
       <section class="cta inner-pd d-flex flex-column align-items-center g-2">
         <div class="content d-flex flex-column g-1">
@@ -150,6 +152,7 @@
       </section>
     </main>
     <footer id="footer" class="inner-pd d-flex flex-column align-items-center g-1"></footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script type="module" src="js/main.js"></script>
     <script src="js/about.js"></script>
   </body>

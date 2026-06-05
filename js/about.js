@@ -39,3 +39,21 @@ questions.forEach(q => {
   });
 });
 */
+
+const swiper2 = new Swiper(".portfolio .swiper", {
+  direction: "horizontal",
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+});
+const prevBtn2 = document.querySelector(".prev");
+const nextBtn2 = document.querySelector(".next");
+
+prevBtn2.addEventListener("click", () => {
+  swiper2.slidePrev();
+});
+nextBtn2.addEventListener("click", () => {
+  swiper2.slideNext();
+});
